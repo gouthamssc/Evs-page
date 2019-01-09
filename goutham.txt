@@ -1,0 +1,576 @@
+package intro1;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Intro1 {
+
+public static int a;
+
+public static void main(String[] args) {
+
+int a = 30;
+
+String st = "hello";
+
+//wrapper class are used to convert string to number formats
+
+int c = Integer.MAX_VALUE;
+
+int d = Integer.MIN_VALUE;
+
+System.out.println(c);
+
+System.out.println(d);
+
+//Integers and float can take 32 bits
+
+//Long can take up to 64 bits
+
+long e = Long.MAX_VALUE;
+
+long f = Long.MIN_VALUE;
+
+System.out.println(e);
+
+System.out.println(f);
+
+//single precision floating point number
+
+float q = 24;
+
+float w = 23.9f;
+
+float r = Float.MAX_VALUE;
+
+System.out.println(w+q);
+
+System.out.println(r);
+
+//Double precision floating point number
+
+double q1 = 24;
+
+double w1 = 23.9d;
+
+double r1 = Double.MAX_VALUE;
+
+System.out.println(w1+q1);
+
+System.out.println(r1);
+
+//char can take 1 char value
+
+char x ='s';
+
+char y = 'a';
+
+int  s = x+y;
+
+System.out.println(s);//prints ascii values
+
+//Boolean
+
+boolean aa = true;
+
+boolean ab = false;
+
+System.out.println(aa);
+
+//strings
+
+String str = "hi";
+
+String str1 = "welcome";
+
+System.out.println(str+str1);
+
+System.out.println(10+str);
+
+System.out.println(str+11);
+
+    //double>float>long>int
+
+//lower hierarchy value can be converted to higher hierarchy 
+
+int cv=90;
+
+long b= cv;
+
+float d1 = b;
+
+double b1 = d1;
+
+System.out.println(b1);
+
+//higher to lower can be converted using type casting
+
+         int u = (int)b1;
+
+         int u2 =(int)d1;
+
+         
+
+        //conversion of string to numbers
+
+        
+
+         //string to double
+
+         String st1 = "10.0";
+
+         double a5 = Double.parseDouble(st1);
+
+         
+
+       /*  String st2 = "hi";
+
+         double a6 = Double.parseDouble(st2);      //warning throws
+
+         System.out.println(a6);
+
+*/
+
+         
+
+         
+
+        //string to float
+
+         String g1= "13.12f";
+
+         String g2 = "10.30F";
+
+         float g5 = Float.parseFloat(g1);
+
+         System.out.println(g5);
+
+         
+
+       //string to int
+
+         String g3= "13";
+
+         String g4 = "10";
+
+         int g51 = Integer.parseInt(g3);
+
+         System.out.println(g51);
+
+         
+
+       //numbers to string --> use valueOf method of String class
+
+         int g = 10;
+
+         String gg = String.valueOf(g);
+
+         System.out.println(gg);
+
+         
+
+         double g9 = 10.12d;
+
+         String ggf = String.valueOf(g9);
+
+         System.out.println(ggf);
+
+         
+
+         
+
+         char gd= 'f';
+
+         String ggg= String.valueOf(gd);
+
+         System.out.println(ggg);
+
+         
+
+         
+
+         boolean g6 = true;
+
+         String ggs = String.valueOf(g6);
+
+         System.out.println(ggs);
+
+         
+
+         
+
+         // 1-->multiplication,division,modulus have same hierarchy level
+
+         // 2-->Addition, sub have same hierarchy level
+
+         // 1 > 2  ;  Greater the hierarchy compiled first
+
+         // If hierarchy is same compilation starts from left to right
+
+         
+
+         
+
+         
+
+         
+
+         Scanner input = new Scanner(System.in);
+
+         System.out.println("Enter the age \n");
+
+         int o = input.nextInt();
+
+         
+
+         if(o<71 && o>17) {
+
+         System.out.println("pancrad can be issued\n");
+
+    }
+
+         else {
+
+             System.out.println("pancrad can't be issued\n");
+
+         }
+
+         
+
+         int s1= 20;
+
+         int s2=90;
+
+         int s3= 56;
+
+         int s4=89;
+
+         
+
+         if(s1>s2 && s1>s3 && s1>s4) {
+
+        	System.out.println(s1);
+
+         }
+
+         else if(s2>s3 && s2>s4) {
+
+        	System.out.println(s2);
+
+         }
+
+         else if(s3 > s4) {
+
+        	System.out.println(s3);
+
+
+
+         }
+
+         else {
+
+        	System.out.println(s4);
+
+
+
+         }
+
+
+
+         int count=1;
+
+         int m;
+
+         for(m=1;count<6;count++) {
+
+         
+
+        	m=m*count;
+
+         }
+
+    	System.out.println(m);
+
+     
+
+     
+
+    	//Fibonacci series
+
+     
+
+   
+
+    	        int n, a1 = 0, b11 = 0, c1 = 1;
+
+    	        Scanner s11 = new Scanner(System.in);
+
+    	        System.out.print("Enter the Range");
+
+    	        n = s11.nextInt();
+
+    	        System.out.print("Fibonacci Series is");
+
+    	        for(int i = 1; i <= n; i++)
+
+    	        {
+
+    	            a1 = b11;
+
+    	            b11 = c1;
+
+    	            c1 = a1 + b11;
+
+    	            System.out.print(a1+" ");
+
+    	        }
+
+    	    }
+
+     
+
+     
+
+
+
+}
+
+
+
+
+
+
+
+
+//pallindrome
+
+package intro1;
+
+public class pallindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//kaushik.aryaan@gmail.com
+		int count=0;
+		int array[] = {'m','a','l','a','y','a','l','a','m','i'};
+		int length = array.length;
+		
+		for (int index = 0; index < array.length; index++) {
+			int start = array[index];
+			int end = array[--length];
+		
+		   if(start == end) {
+			   count=1;
+		   }
+		   else {
+			   System.out.println("Not a pallindrome");
+			   break;
+		   }
+	}
+	
+	
+	
+	if(count ==1) {
+		   System.out.println("Its a pallindrome");
+
+	}
+	
+}
+}
+
+
+
+package MultilevelInherientence;
+
+public class Animal {
+
+	public static int tail=1;
+	public static int legs=4;
+	public String color;
+	public String EatingHabits;
+	
+
+	public static void Runnning (String animalType) {
+		
+		System.out.println(animalType +"Runs");
+	}
+	
+	
+	public static void eats (String animalType) {
+		
+		System.out.println(animalType +"Eats");
+	}
+	
+	public void SoundType(String animalType) {
+		System.out.println("animals makes different sound");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+    Animal a = new Animal();
+    
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+package MultilevelInherientence;
+
+public class Dog extends Animal {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Dog d1= new Dog();
+System.out.println("Dogs have  "+Dog.legs+" legs and  "+Dog.tail+"tail");
+	d1.color="brown";
+	System.out.println("Dog is  "+ d1.color+"  in color");
+
+	
+	d1.EatingHabits="carnivorous";
+	System.out.println("Dogs are  "+d1.EatingHabits+"  animal");
+	
+	
+	d1.eats("dog  ");
+    d1.Runnning("dog  ");
+    
+    
+    d1.SoundType();
+	
+	
+	
+	
+	}
+public void SoundType() {
+	
+	System.out.println("Dogs bark");
+	
+}
+}
+
+
+
+
+
+package MultilevelInherientence;
+
+
+
+public class puppy extends Dog{
+
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+
+puppy p1= new puppy();
+
+System.out.println("puppy have  "+puppy.legs+" legs and  "+puppy.tail+"tail");
+
+p1.color="white";
+
+System.out.println("puppy is  "+ p1.color+"  in color");
+
+
+
+p1.EatingHabits= "carnivorous";
+
+System.out.println("Dogs are  "+p1.EatingHabits+"  animal");
+
+p1.eats("puppy");
+
+    p1.Runnning("puppy");
+
+   
+
+   
+
+    p1.SoundType();
+
+}
+
+public void SoundType() {
+
+System.out.println("puppy bark low");
+
+}
+
+
+
+}
+
+
+
+
+package vehicles;
+
+
+
+public class BIke {
+
+
+
+public String PrincipleManufacturer;
+
+public static final int wheels =2;
+
+public String model;
+
+public int price;
+
+public BIke() {
+
+System.out.println("Ths is a bike");
+
+}
+
+//low end bike
+
+public BIke(String pm,String m, int p) {
+
+PrincipleManufacturer = pm;
+
+model = m;
+
+price = p; 
+
+System.out.println("Ths is a bike made by  "  + PrincipleManufacturer);
+
+System.out.println("Ths is a bike is of model "+model);
+
+System.out.println("Ths is a bike costs "+ price);
+
+}
+
+//9945515744  
+
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+
+BIke b1 = new BIke("hero","cd 100",50000);
+
+
+
+}
+
+}
+
+
+
